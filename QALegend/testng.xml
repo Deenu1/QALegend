@@ -4,20 +4,24 @@
 	<listeners>
 	<listener class-name="TestCases.Listeners"></listener>
 </listeners>
+<!--<groups>
+	<run>
+		<include name="Regression"></include>
+		<include name="Smoketest"></include>
+		</run>
+</groups>-->
   <test thread-count="5" name="Test">
 	  <parameter name="Browser" value="Chrome"></parameter>
 	 <classes>
       <class name="TestCases.QALegendTestCases">
 		<methods>
-			<!--<include name="loginCRM"></include>
-			<include name="addEvent"></include>
-			<include name="testChatBoxFunctionality"></include>
-			<include name="incomeVsExpenses"></include>
+			<include name="loginCRM"></include>
+			<include name="addEvent"></include>            <include name="testChatBoxFunctionality"></include>            <include name="incomeVsExpenses"></include>
 			<include name="projectStatusDropdown"></include>
 			<include name="addItems"></include>
 			<include name="clockInOrOutMembers"></include>
 			<include name="Tickets"></include>
-			<include name="applyLeave"></include>-->
+			<include name="applyLeave"></include>
 			<include name="addAnnouncement"></include>
 			</methods>
 		</class>  

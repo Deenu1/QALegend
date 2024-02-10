@@ -24,8 +24,6 @@ public class QALegend_TimeCards {
 	
 	
 	
-	
-	
 	public QALegend_TimeCards(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver=driver;

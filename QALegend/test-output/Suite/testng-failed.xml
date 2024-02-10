@@ -6,11 +6,27 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="Browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+        <include name="Smoketest"/>
+      </run>
+    </groups>
     <classes>
       <class name="TestCases.QALegendTestCases">
         <methods>
+          <include name="applyLeave"/>
           <include name="clockInOrOutMembers"/>
-          <include name="initialization"/>
+          <include name="tearDown"/>
+          <include name="addEvent"/>
+          <include name="projectStatusDropdown"/>
+          <include name="addItems"/>
+          <include name="addAnnouncement"/>
+          <include name="loginCRM"/>
+          <include name="loginCRM"/>
+          <include name="incomeVsExpenses"/>
+          <include name="testChatBoxFunctionality"/>
+          <include name="Tickets"/>
         </methods>
       </class> <!-- TestCases.QALegendTestCases -->
     </classes>

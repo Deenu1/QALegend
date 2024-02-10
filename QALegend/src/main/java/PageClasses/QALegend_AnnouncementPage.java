@@ -41,8 +41,7 @@ WebElement addAnnouncement;
  @FindBy(xpath = "//button[text()=' Save']")
  WebElement saveButton;
 
-@FindBy(xpath = "//div[@class='title-button-group']")
-WebElement viewButton;
+
 
 @FindBy(xpath = "//h1[text()='Edit announcement']")
 WebElement editAnnouncement;
@@ -92,9 +91,7 @@ public QALegend_AnnouncementPage(WebDriver driver) {
 		PageUtility.scrollToElement(driver,saveButton);
 		PageUtility.clickOnElement(saveButton);
 	}
-	public boolean viewButtonVisibility(WebElement element) {
-		return PageUtility.isElementDisplayed(viewButton);
-	}
+	
 	public String displayEditAnnouncement() {
 		return PageUtility.getTextFromElement(editAnnouncement);
 	}
